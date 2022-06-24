@@ -1,0 +1,518 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  
+  .hero-section {
+    background: url("materiale/slider.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 30vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .hero-section .hero-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+    text-align: left;
+    margin-left: 20%;
+  }
+  
+  .hero-section1 {
+    background: url("materiale/trae.jpg") 50% no-repeat;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+padding-left: 25px;
+padding-right: 25px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .hero-section1 .hero-section-text1 {
+    text-align: left;
+  }
+  
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  padding-left: 0%;
+  padding-right: 1%;
+}
+
+
+.nav > .nav-header {
+  display: inline;
+  margin-right: 20px;
+  
+}
+
+.nav a.active {
+  border-bottom: 3px solid #ecc511;
+}
+
+.nav > .nav-btn {
+  display: none;
+  
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 13px;
+}
+.nav > .nav-links1 {
+  display: inline;
+  float: right;
+  font-size: 13px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000;
+  background-color: white;
+}
+.nav > .nav-links1 > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000;
+  background-color: white;
+  
+}
+
+.nav > .nav-links > a:hover {
+  border-bottom: 3px solid #ecc511;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.h3{
+  color: #000;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+@media (max-width:1370px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #ecc511;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #7a0202;
+    
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+.section1{
+  margin-top: 40px;
+}
+  .h1{
+   
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: -25px;
+}
+.h11{
+ 
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.section3{
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  color: black;
+  font-size: 30px;
+}
+
+.knap{
+    color: white;
+    background-color: rgba(122, 2, 2, 0.747);
+    border: 0;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+.knap:hover {
+    background-color: #ecc511;
+    color: white;
+  }
+
+
+
+.h2{
+    text-align: center;
+    font-size: 20px;
+}
+.p{
+    text-align: center;
+    font-size: 15px;
+}
+.p1{
+  font-size: 15px;
+}
+.rundetext{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.runde{
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.slider2{
+  width: 100%;
+  height: 500px;
+ }
+
+.h4{
+text-align: center;
+font-size: 20px;
+ }
+
+ .kontakt{
+  text-align: center;
+  font-size: 15px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #313132;
+  border-radius: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #7a0202;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: #ecc511;
+}
+
+.container3 {
+ 
+  padding: 20px;
+}
+
+.footer{
+ background-color: #313132;
+ color: white;
+}
+
+.h5{
+  font-size: 23px;
+  text-align: center;
+}
+.pfooter{
+  font-size: 13px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.aaa{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.aaaa{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.knæk{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+
+}
+
+.pfooter2{
+  font-size: 13px;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+ 
+.designet{
+  font-size: 13px;
+  margin-top: -10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.cards1 {
+
+  display: grid;
+}
+.cards2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+  @media screen and (min-width: 600px) { 
+    body {
+        background-color: white;
+      }
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .cards1 { grid-template-columns: repeat(1, 1fr); }
+      .cards2 { grid-template-columns: repeat(1, 1fr); }
+      .slider{
+        width: 100%;
+        height: auto;
+       }
+       .designet{
+        font-size: 13px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+      }
+      .aaaa{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+   }
+
+
+   .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+.col-main {
+  flex: 1;  
+}  
+
+.col-complementary {
+  flex: 1;  
+}
+
+
+@media only screen and (min-width: 640px) {
+  .layout {
+    display: flex;
+  }
+  .cards2 { grid-template-columns: repeat(1, 1fr); }
+}
+
+
+.container1 {
+  max-width: 80em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+}
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+   @media screen and (min-width: 800px) { 
+    body {
+        background-color: white;
+      }
+      .designet{
+        font-size: 13px;
+        margin-top: 20px;
+        text-align: right;
+        padding-bottom: 10px;
+      }
+      .hero-section{ 
+        height: 50vh;
+       }
+      .slider{
+        width: 100%;
+        height: auto;
+       }
+ 
+    .cards { grid-template-columns: repeat(4, 1fr); }
+    .cards1 { grid-template-columns: repeat(3, 1fr); }
+    .cards2 { grid-template-columns: repeat(2, 1fr); }
+    .runde{
+      margin-left: 0;
+      margin-right: auto;
+      width: 100%;
+    }
+    .cards{
+      margin-bottom: 20px;
+    }
+    .aaaa{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+      margin-top: 10px;
+    }
+   }
+
+   @media screen and (min-width: 1100px) { 
+    body {
+        background-color: white;
+      }
+      .slider{
+        width: 100%;
+        height: auto;
+       }
+       .cards{
+        grid-gap: 50px;
+      }
+   }
+   @media screen and (min-width: 1310px) {
+    body {
+      background-color: white;
+    }
+   .hero-section1{
+     padding-left: 5%;
+   }
+  }
+   @media screen and (min-width: 1370px) { 
+    body {
+        background-color: white;
+      }
+      .nav {
+        height: 50px;
+        width: 100%;
+        position: relative;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .hero-section1{
+        padding-left: 10%;
+      }
+     
+   }
+   @media screen and (min-width: 1550px) {
+     body{
+       background-color: white;
+     }
+    .hero-section1{
+      padding-left: 15%;
+    }
+    }
+
+    @media screen and (min-width: 1700px) {
+      body{
+        background-color: white;
+      }
+     .hero-section1{
+       padding-left: 20%;
+     }
+     }
